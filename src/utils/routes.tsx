@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, RouteObject } from "react-router-dom";
 import * as Components from "../utils/index";
 
-export const routes: Route[] = [
+export const routes: RouteObject[] = [
   {
     path: "/",
     element: <Components.Home />,
-    children: null,
+    children: [],
   },
   {
     path: "page02",
@@ -14,14 +14,8 @@ export const routes: Route[] = [
       {
         path: "page02-1",
         element: <div>ページ2-1</div>,
-        children: null,
+        children: [],
       },
     ],
   },
 ];
-
-interface Route {
-  path: string;
-  element: JSX.Element;
-  children: Route[] | null;
-}
