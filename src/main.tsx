@@ -6,6 +6,7 @@ import { routes } from "./utils/routes";
 // CSS
 import "./assets/css/reset.css";
 import "./assets/css/style.css";
+import "./index.css";
 
 const router = createBrowserRouter(routes);
 
